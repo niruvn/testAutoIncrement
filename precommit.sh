@@ -2,7 +2,10 @@
 
 targetFile="Version.targets"
 
-versionStr=$(grep VersionPatch $targetFile | sed 's/.*= //')
-currentBuild=${versionStr//[!0-9]/}
-newStr="<VersionPatch>"$((currentBuild+1))"</VersionPatch>"
-sed -i "" 's/$versionStr/$newStr' $targetFile
+
+patchNo=$(grep VersionPatch $targetFile | sed 's/.*= //' | tr -d -c 0-9)
+findStr="<VersionPatch>"$((patchNo))
+
+replaceStr="<VersionPatch>"$((patchNo+1))
+
+sed -i "s/$findStr/$replaceStr/" $targetFile
