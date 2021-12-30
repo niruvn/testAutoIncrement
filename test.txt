@@ -1,3 +1,4 @@
 this is a initial commit of a test file
 First manual Commit with version targets
 Third line to test auto increment during commit
+auto commit
