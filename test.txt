@@ -3,3 +3,4 @@ First manual Commit with version targets
 Third line to test auto increment during commit
 auto commit
 auto increment 2
+auto increment 3
