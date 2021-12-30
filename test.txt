@@ -1,1 +1,2 @@
 this is a initial commit of a test file
+First manual Commit with version targets
