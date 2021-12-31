@@ -7,3 +7,4 @@ auto increment 3
 master branch
 sub branch edit
 another edit
+edit 2 test
