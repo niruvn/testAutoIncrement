@@ -1,0 +1,24 @@
+#!/bin/sh
+
+TARGET_FILE="Version.targets"
+currentBranch=$(git rev-parse --abbrev-ref HEAD)
+
+echo $currentBranch
+
+if [ "$currentBranch" = "master" ]
+then
+	echo 'im going to execute pre-merge code'
+	git pull origin master
+	
+	patchNo=$(grep VersionPatch $TARGET_FILE | sed 's/.*= //' | tr -d -c 0-9)
+	findStr="<VersionPatch>"$((patchNo))
+
+	replaceStr="<VersionPatch>"$((patchNo+1))
+
+	sed -i "s/$findStr/$replaceStr/" $TARGET_FILE
+
+	git add Version.targets
+
+	echo "VersionPatch incremented from "$findStr" to  $replaceStr "
+fi
+echo 'code exit'
