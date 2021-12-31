@@ -3,6 +3,6 @@
     <PropertyGroup>
         <VersionMajor>22</VersionMajor>
         <VersionMinor>2</VersionMinor>
-        <VersionPatch>9</VersionPatch>
+        <VersionPatch>10</VersionPatch>
     </PropertyGroup>
 </Project>
