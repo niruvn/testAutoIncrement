@@ -21,3 +21,4 @@ edit 2 from testbranch
 edit from featurebranch
 edit from mantasbranch
 edit from some feature
+edit from somefeature2
