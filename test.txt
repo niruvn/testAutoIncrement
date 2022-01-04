@@ -22,3 +22,4 @@ edit from featurebranch
 edit from mantasbranch
 edit from some feature
 edit from somefeature2
+edit from somefeature3
