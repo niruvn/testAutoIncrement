@@ -18,3 +18,4 @@ edit from anotherchildbranch
 edit from feature branch
 edit from test branch
 edit 2 from testbranch
+edit from featurebranch
